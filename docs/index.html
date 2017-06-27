@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/gradient.css" rel="stylesheet" />
+        <link href="css/face.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="gradient"></div>
+        <img src="img/face.png" alt="Angry" title="Angry" id="face" />
+    </body>
+    <script>
+        $(document).ready(function() {
+            res();
+        });
+
+        $(window).resize(function() {
+            res();
+        });
+
+        function res() {
+            $("#gradient").width($(document).width());
+            $("#gradient").height($(document).height());
+        }
+    </script>
+</html>
